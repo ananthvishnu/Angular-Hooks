@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <app-cockpit
     (serverCreated)="onServerAdded($event)"
     (blueprintCreated)="onBlueprintAdded($event)"
@@ -16,7 +16,7 @@
       </div>
       <br />
       <br />
-      <!-- Loop through serverElements and display content in Bootstrap cards -->
+      Loop through serverElements and display content in Bootstrap cards
       <app-server-element
         class="card"
         [srvElement]="serverElement"
@@ -37,4 +37,19 @@
       </app-server-element>
     </div>
   </div>
-</div>
+</div> -->
+<!-- navbar-->
+
+
+<app-topbar></app-topbar>
+<app-header></app-header>
+<app-hero></app-hero>
+<main id="main">
+  <app-icon-box></app-icon-box>
+  <app-about-us></app-about-us>
+  <!-- <app-client></app-client> -->
+  <app-why-us></app-why-us>
+  <app-service></app-service>
+  <app-home></app-home>
+  <app-footer></app-footer>
+</main>

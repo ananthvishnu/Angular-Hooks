@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    height: 60px;
+    padding: 0;
+    font-size: 14px;
+    transition: all 0.5s;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 996;
+  }
+  
+  #topbar.topbar-scrolled {
+    top: -60px;
+  }
+  
+  #topbar .contact-info a {
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  #topbar .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  #topbar .contact-info i {
+    color: #f6b024;
+    line-height: 0;
+    margin-right: 5px;
+  }
+  
+  #topbar .contact-info .phone-icon {
+    margin-left: 15px;
+  }
+  
+  #topbar .cta {
+    background: transparent;
+  }
+  
+  #topbar .cta a {
+    color: #fff;
+    background: #f6b024;
+    padding: 6px 24px 8px 24px;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 50px;
+    text-decoration:none;
+  }
+  
+  #topbar .cta a:hover {
+    background: #f1a40a;
+  }

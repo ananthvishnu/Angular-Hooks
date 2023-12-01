@@ -1,22 +1,48 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { TopbarComponent } from './topbar/topbar.component';
+import { HeroComponent } from './hero/hero.component';
+import { IconBoxComponent } from './icon-box/icon-box.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ClientComponent } from './client/client.component';
+import { WhyUsComponent } from './why-us/why-us.component';
+import { ServiceComponent } from './service/service.component';
+import * as AOS from 'aos';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    TopbarComponent,
+    HeroComponent,
+    IconBoxComponent,
+    AboutUsComponent,
+    ClientComponent,
+    WhyUsComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule implements OnInit { 
+  ngOnInit() {
+    AOS.init();
+  }
+}
