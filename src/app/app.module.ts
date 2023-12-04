@@ -14,7 +14,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ClientComponent } from './client/client.component';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { ServiceComponent } from './service/service.component';
-import * as AOS from 'aos';
 
 
 @NgModule({
@@ -41,8 +40,6 @@ import * as AOS from 'aos';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule implements OnInit { 
-  ngOnInit() {
-    AOS.init();
-  }
+export class AppModule  { 
+ 
 }
