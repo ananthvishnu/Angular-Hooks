@@ -26,3 +26,5 @@ body {
 @import '~animate.css/animate.min.css';
 /* @import 'aos/dist/aos.css'; */
 
+/* styles.scss or styles.css */
+@import '~swiper/swiper-bundle.css';
