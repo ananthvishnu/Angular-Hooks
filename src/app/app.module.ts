@@ -17,6 +17,9 @@ import { ServiceComponent } from './service/service.component';
 
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
+import { CtaComponent } from './cta/cta.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TeamComponent } from './team/team.component';
 // register Swiper custom elements
 register();
 
@@ -34,7 +37,10 @@ register();
     AboutUsComponent,
     ClientComponent,
     WhyUsComponent,
-    ServiceComponent
+    ServiceComponent,
+    CtaComponent,
+    PortfolioComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
